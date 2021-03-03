@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLEX Navbar</title>
+    <style>
+        body{
+            background-color: #333;
+            font-family: arial;
+
+        }
+        .navbar ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            background-color: #111;
+            display: flex;
+            justify-content: flex-start;
+           
+ 
+        }
+        @media(max-width: 800px){
+            .navbar ul{
+                flex-direction: column;
+            }
+        }
+        .navbar li {
+            border: 1px solid rgb(224, 180, 34);
+            padding: 0.5em;
+        }
+        .navbar .brand {
+            font-size: 30px;
+            padding: 0.5em;
+            margin: 0.5em;
+
+        }
+        .navbar a{
+            text-decoration: none;
+            color: ghostwhite;
+        }
+        
+    </style>
+</head>
+<body>
+    
+ <nav class="navbar">
+     <ul>
+         <li class="brand"><a href="">BRAND</a></li>
+         <li><a href="">Minima!</a></li>
+         <li><a href="">Qui?</a></li>
+         <li><a href="">Quia!</a></li>
+         <li><a href="">Dolore.</a></li>
+         <li><a href="">Quae!</a></li>
+         <li><a href="">Magni.</a></li>
+     </ul>
+ </nav>
+
+</body>
+</html>
